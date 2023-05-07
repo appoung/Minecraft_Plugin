@@ -1,6 +1,16 @@
 import streamlit as st
 from google.cloud import firestore
 from PIL import Image
+import time
+def startpath():
+    from mcpi.minecraft import Minecraft
+    mc = Minecraft.create()  # 마인크래프트에 연결
+    while True:
+        player_ids = mc.getPlayerEntityIds()
+        for player_id in player_ids:
+            pos = mc.entity.getTilePos(1401)
+            mc.postToChat("Byeongjun Position: x={1} y={2} z={3}".format(pos.x,pos.y,pos.z))
+        time.sleep(1)
 db = firestore.Client.from_service_account_json("firestore-key.json")
 st.title('Byeong_jun님의 네비게이션')
 junimage = Image.open('Byeong_jun.png')
@@ -51,8 +61,18 @@ for doc in path_ref.stream():
         st.experimental_rerun()
 
     pathstart = st.button("출발", key=doc.id)
-    # if pathstart:
-    # startpath(x, y, z)
+    pathstop = st.button("중지",key=f"pathdelete_{doc.id}")
 
-
-# def startpath(x, y, z):
+def startpath():
+    from mcpi.minecraft import Minecraft
+    mc = Minecraft.create()  # 마인크래프트에 연결
+    while True:
+        player_ids = mc.getPlayerEntityIds()
+        for player_id in player_ids:
+            pos = mc.entity.getTilePos(1401)
+            mc.postToChat("Byeongjun Position: x={0} y={1} z={2}".format(pos.x, pos.y, pos.z))
+        time.sleep(1)
+        if pathstop:
+            break
+if pathstart:
+    startpath()

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "minecraftplugin-d8a90",
+  "private_key_id": "b64ae8ecaddcbb634a05e5e20657d285abbcb201",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCOV+DQLXWJ1tbj\nGTqWHooQihUB6jWLffU7uS9uDZ4moAoW54oX0Wx23bHLdj6oGJpSqoFoq0URqYP7\nq0ZDHOP/xEN559ZR62sf6nS7clRXTyikpx1z0E/GH8nCxOAEqM9DWkYu/aZj2wsE\ngOhHoYbRgSAM/IZWGx11jf9L+C+AWOyjvJuzLTWccEf+DlgU7uflmyqYz+3orxlo\niNS5x1WC30YyoX95RZMLG0Sx0EE3c5di9l12E8ITnUCYdgMJU3vKmXdRfxytuBDH\nO8cugIEo2FpBK0Zt8AdOKeiuvgNy5AAKGoUmq4rhrv0SQloAP2sg5m667JPG4JKq\n1zoKjpgDAgMBAAECggEABxZLBDJvOriupEn6R8UnfKFTYHAH0HUqA5o5yVH2QNgR\nCIjosDzmGJj7JDUz82yeKmWA4fQ9ER8OijZB3k+O7ooYDfbEDfoZsFIdE8QifOJd\nFK2ZYs3JWwT0J7Vjrfe1shXJjsdkRG6Agu3kIsThEIdMUDk2ew0Ij3TNdDvcKZiw\n1Ubd7oGCHl3P/gD0zWyMoYlabYbN0BcQ054ki8vgqxoqXlpWR3yUrhZ5LDrZ4eUT\nv8RyHPgjziiX+TNjVUlCHuusA7nFp0vYycfu/gvtEbCmj9T5Cz9L94gwLOO9PWT3\nUE9IO6yam1wiSNQ9i0z28ZJxJkpuXu6L567PVlYqWQKBgQC+7LE5xl1+AZmPUWsw\n9cIujLjVzyaUHRn02eo8MGCdCwPPphoF1zF7O1Z55UmnFi3bTMQ7UoSchmcVLcdQ\n2h6FmWR54WrOFiqXpTQeStGTuqStqKQZL8Jk564FloXgw7X080JvckINUe6C8qTd\nQyxpggTDoSwctln4eQFbSSrgDQKBgQC+3C1qcosZIn5aOn0d/bmgKAHzl0ZkUQt1\nyIWiWTJGoYe213oqpHFxHq7N4ckLhJmhqNBPD7CqMkAfgfSO05pfYwrdUX+asDoR\nhcTBSmNJkTcHLIgMqqfFzBJPHyFLeHrz2ESz8+UxTkMOA80AgE9Rwoxov4+dKlgX\nUCQ+2hBETwKBgQC0ddKZ8lYCOQ7lOSbhMxmkmBxI87DaRJt5JNRSqcNYDMZAahak\nuJ8rhI2bT88LIFqdsvSzwa5YqG0cxpVjZZd93dvrm9YxDyCZD2ywyTVIthzbi8/3\ngn3ylE2XOIw4Q6Rj7942qr+mCXAw05pjDRAYde1834VraiymP/G5T/I3rQKBgQCI\ngX92B9CWvIX0UKrV/Xd7JcInj8WH0DNLHYz+jZ8Yx0UCr+CviQed6V0K4XbiZwde\niRfbxBQN1nzoTBE26f8aRAMsQbLrVylhCPStbl/O6S6bUe1IafIu1QMvVcuBZ/1A\nVCjnMAR3nEr3Rh6kQiD5EBVOgdvcg8GXgvk5fsttnwKBgQCExK15MBPKQfVRnoKd\nktKFF0nJGDLgPZkUFskuaDb1kkXmqX9tWs/7LRPf/5wdFUo/X2grMVchNzVsTcFh\nMnOz7eQlR+LaaBbC9kMT5UJIa7Z3fcYz8/dSiYwjU4TG36cLH+n1W8BGLS0VpSlM\ntPyJ/C2yYkTkuuyECW6aC/LChg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-r22wa@minecraftplugin-d8a90.iam.gserviceaccount.com",
+  "client_id": "115898621629507818991",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-r22wa%40minecraftplugin-d8a90.iam.gserviceaccount.com"
+}

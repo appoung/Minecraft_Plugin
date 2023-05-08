@@ -2,15 +2,23 @@ import streamlit as st
 from google.cloud import firestore
 from PIL import Image
 import time
-def startpath():
+def startpath(x,y,z):
+    pathstop_while=True
     from mcpi.minecraft import Minecraft
     mc = Minecraft.create()  # 마인크래프트에 연결
-    while True:
+    while pathstop_while==True:
         player_ids = mc.getPlayerEntityIds()
-        for player_id in player_ids:
-            pos = mc.entity.getTilePos(1401)
-            mc.postToChat("Byeongjun Position: x={1} y={2} z={3}".format(pos.x,pos.y,pos.z))
+        pos = mc.entity.getTilePos(player_ids[1])
+        X_AXIS = 65
+        Y_AXIS = 63
+        Z_AXIS = 146
+        pos_x = pos.x + X_AXIS
+        pos_y = pos.y + Y_AXIS
+        pos_z = pos.z + Z_AXIS
+        mc.postToChat("GooYa Position: x={0} y={1} z={2}".format(str(x-pos_x), str(y-pos_y), str(z-pos_z)))
         time.sleep(1)
+        if pathstop:
+            pathstop_while=False
 db = firestore.Client.from_service_account_json("firestore-key.json")
 st.title('Byeong_jun님의 네비게이션')
 junimage = Image.open('Byeong_jun.png')
@@ -61,18 +69,7 @@ for doc in path_ref.stream():
         st.experimental_rerun()
 
     pathstart = st.button("출발", key=doc.id)
-    pathstop = st.button("중지",key=f"pathdelete_{doc.id}")
+    pathstop = st.button("중지", key=f"pathdelete_{doc.id}")
+    if pathstart:
+        startpath(int(x),int(y),int(z))
 
-def startpath():
-    from mcpi.minecraft import Minecraft
-    mc = Minecraft.create()  # 마인크래프트에 연결
-    while True:
-        player_ids = mc.getPlayerEntityIds()
-        for player_id in player_ids:
-            pos = mc.entity.getTilePos(1401)
-            mc.postToChat("Byeongjun Position: x={0} y={1} z={2}".format(pos.x, pos.y, pos.z))
-        time.sleep(1)
-        if pathstop:
-            break
-if pathstart:
-    startpath()

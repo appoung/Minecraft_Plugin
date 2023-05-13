@@ -60,7 +60,7 @@ for doc in path_ref.stream():
         mc = Minecraft.create()  # 마인크래프트에 연결
         while True:
             player_ids = mc.getPlayerEntityIds()
-            pos = mc.entity.getTilePos(player_ids[1])
+            pos = mc.entity.getTilePos(player_ids[0])
             X_AXIS = 65
             Y_AXIS = 63
             Z_AXIS = 146
